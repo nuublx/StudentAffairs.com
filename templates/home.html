@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+{% extends 'nav.html' %}
+{%block content%}
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {% load static %}
+    <link rel="stylesheet" href="{%  static 'home.css' %}" />
+    <script src="{%  static 'home.js' %}" defer></script>
+    <title>Student's Affairs</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="body1">
+        <div class="content">
+          <img
+            src="{%  static 'FCAI-CU.png' %}"
+            alt="FCAI-CU"
+            width="200px"
+            height="200px"
+            style="float: left"
+          />
+          <p id="intro">Welcome, FCI Student's Affairs</p>
+          <p style="padding-top: 10px">This is your home page</p>
+        </div>
+        <br /><br /><br /><br /><br /><br />
+        <div class="holderEntry">
+          <div class="entry">
+            <p class="text">
+              كل عام وأنتم بخير بمناسبة حلول شهر رمضان المبارك، تقبل الله منا
+              ومنكم صالح الأعمال، جدول المحاضرات أثناء الشهر الفضيل كما هو في
+              الجدول، ملحوظة: الامتحانات النصفية سوف تعقد في الفترة من السبت 9
+              أبريل 2022 وحتى الخميس 14 أبريل 2022 وسوف يتم إرسال جدول
+              الامتحانات في وقت لاحق خلال الأسبوع.
+            </p>
+            <br />
+            <p class="text">
+              Happy Ramadan to all of you, may God accept our deeds. The lecture
+              schedule during the month of Ramadan will be as per the table
+              below. Kindly note that the midterm exams will be held during the
+              period from Saturday April 9, 2022 till Thursday April 14, 2022.
+              The midterm schedule will be announced later during the week.
+            </p>
+            <a href="{%  static 'StudentSchedule_new.pdf' %}" target="_blank">Link</a>
+          </div>
+        </div>
+        <div class="holderEntry">
+          <div class="entry">
+            <p class="text"><ins>Special programs</ins></p>
+            <br />
+            <p class="text">
+              Each student must register in the groups specified of his/her
+              majour group, otherwise their registration will be deleted For
+              example, the student who want to attend in Bio G1, then he/she
+              must register in only groups B1, B2, or B3.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+{% endblock content%}

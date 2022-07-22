@@ -1,0 +1,50 @@
+.body {
+  background-color: #ffffff;
+  margin: auto;
+  font-family: Verdana, sans-serif;
+  padding: 16px 32px 32px 32px;
+}
+
+.logn {
+  text-align: center;
+  padding-top: 200px;
+}
+
+button {
+  background-color: #22c297;
+  color: white;
+  border: none;
+  text-align: center;
+  margin: auto;
+  border-radius: 5px;
+  padding: 6px 18px;
+  font-family: Verdana, sans-serif;
+}
+
+button:hover {
+  background-color: #3ea27b;
+}
+input[type=text],
+input[type=date],
+input[type=tel],
+input[type=password] {
+  width: 30%;
+  padding: 0.5rem 0.75rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  box-sizing: content-box;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: .25rem;
+  transition: 0.2s;
+  outline: none;
+}
+
+input:focus {
+  border: 2px solid #555;
+}
+
+img {
+  width: 250px;
+  height: 270px;
+}

@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+.label {
+  background-color: #ffffff;
+  margin: auto;
+  font-family: Raleway;
+}
+
+h4
+{
+  font-family: Raleway;
+}
+table, th, td {
+    border: 1px solid black;
+  }
+  #container {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+#container th {
+  background-color: #22c297;
+  color: rgb(2, 0, 3);
+}
+#container tr:nth-child(even) {
+  background-color: #f0ffff;
+}
+#container tr:hover {
+  background-color: #f9f0f0;
+}
+#container td,
+#container th {
+  padding: 20px;
+  border: solid 2px black;
+  font-family: Verdana, sans-serif;
+}
+#button{
+    background-color: #22c297;
+    color: white;
+    border: none;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 6px 18px;
+}
+
+#button:hover{
+    background-color: #3ea27b;
+}
+#active_inactive
+ {
+    font-family: Raleway;
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 200px;
+    flex-direction: column;
+ }
+ input[type=number]
+    {
+    font-family: Raleway;
+    width: 300px;
+    padding: 0.5rem 0.75rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    transition: 0.2s;
+    outline: none;
+  }
+  h4{
+    margin:20px 5px;
+    font-size: 20px;
+  }
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+}

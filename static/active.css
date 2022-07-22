@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Raleway;
+  }
+  h2{
+    margin:30px 200px;
+    font-size: 30px;
+  }
+button{
+    background-color: #22c297;
+    color: white;
+    border: none;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    padding: 6px 18px;
+    font-family: Verdana, sans-serif;
+}
+button:hover{
+    background-color: #3ea27b;
+}
+#active_inactive
+ {
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    padding-left: 200px;
+    flex-direction: column;
+ }
+ body {
+    background-color: #ffffff;
+    margin: auto;
+    font-family: Verdana, sans-serif;
+
+  }
+  select {
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 0.5rem 0.9rem;
+    border: none;
+    border-radius: .30rem;
+    background-color: #f1f1f1;
+  }
+  input[type=text]{
+    width: 60%;
+    padding: 0.5rem 0.75rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+
+    box-sizing: border-box;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: .25rem;
+    transition: 0.2s;
+    outline: none;
+  }
+  input[type=checkbox],[type=radio]{
+    transform: scale(1.7);
+    margin-right: 10px;
+  }
+  input:focus {
+    border: 2px solid #555;
+  
+  }
+  input[type=radio]
+  {
+      margin-top: 10px;
+      margin-bottom: 20px;
+  }  
+  .stdinfo {
+    background-color: #dcdcdc;
+    text-align: center;
+    width: 50%;
+  }
+  table, th, td {
+    border: 1px solid black;
+  }
+  #container {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: center;
+}
+#container th {
+  background-color: #22c297;
+  color: rgb(2, 0, 3);
+}
+#container tr:nth-child(even) {
+  background-color: #f0ffff;
+}
+#container tr:hover {
+  background-color: #f9f0f0;
+}
+#container td,
+#container th {
+  padding: 20px;
+  border: solid 2px black;
+  font-family: Verdana, sans-serif;
+}
+  @media (max-width: 800px) {
+    #active_inactive
+    {
+       padding-top: 50px;
+       padding-right: 30px;
+       padding-bottom: 20px;
+       padding-left: 50px;
+       flex-direction: column;
+    }
+    h2{
+      margin:30px 100px;
+      font-size: 30px;
+       font-weight: 500;
+    }
+    #button2{
+      float: right;
+    }
+   }
+  
+ #out{
+  /* padding-top: 50px; */
+  padding-right: 30px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  flex-direction: column;
+}
+
+
+
+  

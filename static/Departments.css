@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+.body {
+  background-color: #ffffff;
+  margin: auto;
+  font-family: Raleway;
+}
+
+
+#depBody {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 60px;
+  padding :30px 30px 50px 200px;
+
+}
+
+.body {
+  font-weight: 500;
+  background-color: #ffffff;
+  margin: auto;
+  padding: 16px 32px 32px 32px;
+}
+
+
+.stdinfo {
+  background-color: #dcdcdc;
+  text-align: center;
+  width: 50%;
+}
+
+button {
+  background-color: #22c297;
+  color: white;
+  border: none;
+  text-align: center;
+  margin: auto;
+  border-radius: 5px;
+  padding: 6px 18px;
+}
+
+button:hover {
+  background-color: #3ea27b;
+}
+
+input[type=number]{
+  width: 30%;
+  padding: 0.5rem 0.75rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  box-sizing: content-box;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: .25rem;
+  transition: 0.2s;
+  outline: none;
+}
+
+input:focus {
+  border: 2px solid #555;
+}
+
+select
+{
+  width: 30%;
+  padding: 0.5rem 0.75rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  box-sizing: content-box;
+  border: 1px solid rgba(0, 0, 0, .15);
+  border-radius: .25rem;
+  transition: 0.2s;
+  outline: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none; 
+}
+
+@media (max-width: 950px) {
+  #depBody 
+  {
+     padding-top: 30px;
+     padding-right: 30px;
+     padding-bottom: 50px;
+     padding-left: 50px;
+     
+  }
+}

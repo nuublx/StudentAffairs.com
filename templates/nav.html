@@ -1,0 +1,43 @@
+{% load static%}
+<link rel="stylesheet" href="{%  static 'nav.css' %}" />
+<script src="{%  static 'home.js' %}" defer></script>
+<header id="header">
+    <nav class="navbar">
+     <div class="brand-title">FCAI-CU</div>
+      <a href="#" class="toggle-button">
+       <span class="bar"></span>
+       <span class="bar"></span>
+       <span class="bar"></span>
+      </a>
+     <div class="navbar-links">
+      <ul>
+        <li class="options">
+          <a href="AddStudent"><strong>Add Student</strong></a>
+        </li>
+        <li class="options">
+          <a href="EditStudent"
+            ><strong>Edit Student</strong></a
+          >
+        </li>
+        <li class="options">
+          <a href="active"
+            ><strong>Active/Inactive Student</strong></a
+          >
+        </li>
+        <li class="options">
+          <a href="Departments"
+            ><strong>Department Assignment</strong></a
+          >
+        </li>
+        <li class="options">
+          <a href="home"><strong>Home</strong></a>
+        </li>
+        <li class="options">
+          <a href="login"><strong>sign out</strong></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+{%block content%}
+{% endblock content%}

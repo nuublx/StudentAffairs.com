@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+{% extends 'nav.html'%}
+{%block content%}
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Student</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'EditStudent.css' %}" />
+    <link rel="stylesheet" href="{% static 'nav.css' %}" />
+    <script src="{% static 'EditStudent.js' %}" defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+
+  <body>
+    <div id="container">
+      <div id ="error"></div>
+      <div class="Form">
+        <h2><br />Edit Student</h2>
+        <br />
+
+        <div class="Search">
+          <label for="FindStudent">Search for a Student: </label>
+          <input type="number" placeholder="Search by ID.." id="SearchID" />
+          <button type="button" onclick="validateSearch()">
+            <i class="fa fa-search"></i> Search
+          </button>
+        </div>
+
+        <div name="editForm">
+          <div id="stud.info">
+            <label>Student Name: </label>
+            <p class="stdinfo" id="n"></p>
+            <label>Student ID:</label>
+            <p class="stdinfo" id="id"></p>
+            <label for="GPA">GPA:</label>
+            <p class="stdinfo" id="stud_gpa"></p>
+            <label>Gender: </label>
+            <p class="stdinfo" id="gndr"></p>
+            <label for="Level">Level:</label>
+            <p class="stdinfo" id="lvl"></p>
+            <label for="Level">Status:</label>
+            <p class="stdinfo" id="stat"></p>
+            <label>Student Department:</label>
+            <p class="stdinfo" id="dep"></p>
+            <label>BirthDate:</label>
+            <p class="stdinfo" id="BD"></p>
+            <label>Phone Number:</label>
+            <p class="stdinfo" id="num"></p>
+            <label>Email:</label>
+            <p class="stdinfo" id="email"></p>
+          </div>
+          <br />
+
+          <div class="Studentinfo">
+            <label for="Edit Name"> Edit Student Name:</label>
+            <input type="text" id="Name" onfocusout="inputValidation()"/>
+          </div>
+
+          <div class="Studentinfo">
+            <label for="level"> Edit Level:</label>
+            <select id="editlvl">
+              <option value="default"></option>
+              <option value="First Level">First Level</option>
+              <option value="Second Level">Second Level</option>
+              <option value="Third Level">Third Level</option>
+              <option value="Fourth Level">Fourth Level</option>
+              <option value="Masters Student">Masters Student</option>
+              <option value="PHD Student">Phd Student</option>
+              <option value="Graduated">Graduated</option>
+            </select>
+          </div>
+
+          <div class="Studentinfo">
+            <label for="EditStatus">Change Status: </label>
+            <input type="radio" id="Active" name="Status" value="Active" />
+            <label for="Active" class="radio">Active</label>
+            <input type="radio" id="Inactive" name="Status" value="Inactive" />
+            <label for="Inactive" class="radio">Inactive</label>
+          </div>
+
+          <div class="Studentinfo">
+            <label for="EditGPA">Change GPA:</label>
+            <input type="number" step=".01" id="newGpa" />
+          </div>
+
+          <div class="Studentinfo">
+            <label for="BirthDate">Edit Birth Date: </label>
+            <input type="date" type="text" value="" id="BrD" min="1970-01-01" max="2005-01-01"/>
+          </div>
+
+          <div class="Studentinfo">
+            <label for="PhoneNumber" class="required">Phone Number:</label>
+            <input type="number" id="PhoneNum" placeholder="000-0000-0000" />
+          </div>
+
+          <div class="Studentinfo">
+            <label for="Email">Change email:</label>
+            <input type="text" id="email_" />
+          </div>
+
+          <br />
+          <button type="submit" id="save" onclick="sub()">
+            <i class="fa fa-save"></i> Save
+          </button>
+
+          <button onclick="dlt()" type="button" name="DeleteStudent">
+            Delete
+          </button>
+        </div>
+        <br />
+        <br />
+      </div>
+    </div>
+  </body>
+</html>
+{% endblock content%}

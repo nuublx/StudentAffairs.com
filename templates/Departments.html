@@ -1,0 +1,57 @@
+<!doctype html>
+{% extends 'nav.html'%}
+{%block content%}
+<head>
+  <title>Department Assignment</title>
+{% load static %}
+  <link rel="stylesheet" href="{% static 'Departments.css' %}">
+  <link rel="stylesheet" href="{% static 'nav.css' %}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="{% static 'Departments.js' %}" defer></script>
+  <meta charset="UTF-8" />
+  
+
+</head>
+
+<html lang="en-US">
+
+<body>
+  <div id="depBody">
+    <h2>Department Assignment</h2> <br><br>
+
+    <div class="department">
+      <div id="error"></div>
+      <div>
+        <label for="srch">Search for a Student: </label>
+        <input name="search" id="srch" type="number" placeholder="Search by ID..">
+        <button type="submit" onclick="validateSearch()"> <i class="fa fa-search"></i> Search</button>
+      </div>
+      <div id="std.Info">
+        <label>Student Name:</label>
+        <p class="stdinfo" id="n"></p>
+        <label>Student ID:</label>
+        <p class="stdinfo" id="id"></p>
+        <label>Student Level:</label>
+        <p class="stdinfo" id="lvl"></p>
+        <label for="dep">Student Department:</label>
+        <select name="Departments" id="dep">
+          <option value="General">General</option>
+          <option value="CS">Computer Science</option>
+          <option value="IS">Information System</option>
+          <option value="IT">Information Technology</option>
+          <option value="AI">Artificial intelligence</option>
+          <option value="DS">Decision Support</option>
+        </select>
+        <button type="button" onclick="assign()" name="save"><i class="fa fa-save"></i> Save</button>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
+{% endblock content%}
